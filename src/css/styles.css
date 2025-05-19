@@ -1,3 +1,8 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -16,4 +21,66 @@
 
 .gallery-item:hover {
   transform: scale(1.03);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  gap: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 360px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px 12px 8px 16px;
+  color: #2e2f42;
+}
+
+.feedback-form input {
+  height: 40px;
+}
+
+.feedback-form button {
+  padding: 16px 24px;
+  background-color: #4f8ef7;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  align-self: flex-start;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.feedback-form button:hover {
+  background-color: #3a6fd6;
+}
+
+.feedback-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #2e2f42;
 }
